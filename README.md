@@ -38,6 +38,7 @@ The temp folder contains everything which requires write access.
 The cache and logs folders contain a folder for each application used.  
 The htdocs folder represents the web root.  
 
+```
 /CodeIgniter/packages  
 /CodeIgniter/packages/languages  
 /CodeIgniter/packages/languages/language  
@@ -53,6 +54,7 @@ The htdocs folder represents the web root.
 /CodeIgniter/temp/logs/_application  
 
 /htdocs
+```
 
 Installation
 ------------

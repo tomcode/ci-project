@@ -1,13 +1,10 @@
 Changelog
 =========
 
-October 31, 2012 Change way to memorize folders
------------------------------------------------
+October 31
+-----------
+Prevent directory listings for assets folder
 
-Replace files index.html with corresponding central .gitignore entries by in folder .gitignores
-
-
-October 31, 2012
-----------------
+Change way to memorize folders: replace files index.html with corresponding central .gitignore entries by in folder .gitignores
 
 Add this change log
