@@ -25,8 +25,14 @@ Repository Branches
 **master**  
 For manual setup
 
-**v2.1.2**  
-Branches with CodeIgniter version numbers (CodeIgniter repo tags prefixed with v) come with a custom index.php file which contains a server name dependant, centralized setup based on environments
+
+**environnements**  
+This branch comes with a custom index.php file. It contains a server name dependent, centralized setup based on environments and server names.
+
+
+Tags
+----
+CodeIgniter version numbers (CodeIgniter repo tags prefixed with v) 
 
 
 Directory structure
@@ -59,23 +65,27 @@ The htdocs folder represents the web root.
 Installation
 ------------
 
-After cloning this repository:
+- Clone this repository
+- Checkout desired branch / version
 
-**v2.1.2** Versioned Branches
+**Branch environnements**  
 
-1. Add a CodeIgniter repo clone as submodule into the folder CodeIgniter,
-   yes, it's a little weird to have later the path CodeIgniter/CodeIgniter, You're free to change that.
-2. Add Your base application as submodule under CodeIgniter/_application or create one by using
+- Add a CodeIgniter repo clone as submodule into the folder CodeIgniter,
+   giving You CodeIgniter/CodeIgniter, You're free to change that.
+- Add Your base application as submodule under CodeIgniter/_application or create one by using
    the default application under CodeIgniter/CodeIgniter/application.
 
 
-**master** Branch
+**Branch master**
 
-Same steps as for version branches, then:
+Same steps as for the environnements branch, then:
 
-3. Copy the CodeIgniter/CodeIgniter/index.php file to htdocs/index.php.
-4. Update the paths in htdocs/index.php.
-5. Update the cache path and the log path in _application/config/config.php,
+- Copy the CodeIgniter/CodeIgniter/index.php file to htdocs/index.php.
+- Update the paths in htdocs/index.php.
+- Update the cache path and the log path in _application/config/config.php,
    I use dirname(APPPATH) to keep it installation independant.
+   
+- Cut the links to the original repo (git remote rm)
+- Add a new origin remote (git remote add, git push -u origin)
 
 
